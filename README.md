@@ -1,3 +1,36 @@
+# 📊 ASOS Revenue Data Analysis
+
+## 📌 Project Overview
+This project focuses on cleaning and analyzing estimated weekly revenue data (£M) for ASOS, an online fast-fashion retailer. The goal of the analysis is to clean raw data containing mixed data types, calculate monthly performance totals and averages across June, July, and August, and identify seasonal revenue trends.
+
+---
+
+## 🛠️ Key Data Tasks & Methodology
+* **Data Cleaning:** Resolved Python `TypeError` issues caused by string/integer type mismatches in the dataset by building a programmatic `for` loop with `int()` conversions.
+* **Data Slicing:** Applied `pandas` / Python list slicing to isolate weekly revenue into monthly periods:
+  * **June:** First 4 weeks
+  * **July:** Next 5 weeks
+  * **August:** Final 5 weeks
+* **Aggregation:** Computed total revenue (`sum()`) and weekly average revenue (`sum() / len()`) per month.
+
+---
+
+## 📈 Key Findings & Takeaways
+* **Peak Revenue Month:** **July** generated the highest average weekly revenue at **£76.8M**, outperforming **June (£70.5M)** and **August (£74.4M)**.
+* **Seasonal Trend:** Summer fashion demand and peak promotions drive a sales lift in mid-summer (July) before tapering off slightly in late August.
+* **Stability:** Overall weekly revenue remains consistent across the quarter, showing strong baseline stability.
+
+---
+
+## 📂 Repository Contents
+* [`M2_ASOS_Analyzing_Revenue.ipynb`](./M2_ASOS_Analyzing_Revenue.ipynb) — Full Jupyter Notebook containing Python code, data cleaning logic, and output metrics.
+
+---
+
+## 💻 Tech Stack
+* **Language:** Python 3
+* **Libraries:** Pandas
+* **Environment:** Jupyter Notebook
 {
  "cells": [
   {
